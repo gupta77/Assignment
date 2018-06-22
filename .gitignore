@@ -1,9 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 .idea/
+.idea/vcs.xml
 *.iml
-
-
-pom.xml
-
 target/
