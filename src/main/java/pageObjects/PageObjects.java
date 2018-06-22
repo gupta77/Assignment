@@ -1,4 +1,4 @@
-package commonUtil;
+package pageObjects;
 
 import com.hp.lft.sdk.Desktop;
 import com.hp.lft.sdk.GeneralLeanFtException;

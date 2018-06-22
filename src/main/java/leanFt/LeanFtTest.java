@@ -1,7 +1,6 @@
 package leanFt;
 
-import commonUtil.Hooks;
-import commonUtil.PageObjects;
+import pageObjects.PageObjects;
 import com.hp.lft.sdk.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -9,7 +8,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import sun.plugin2.util.BrowserType;
 import unittesting.*;
 
 import java.io.IOException;
