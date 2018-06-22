@@ -1,0 +1,275 @@
+<Results>
+    <GeneralInfo>
+        <Name/>
+        <RunStartTime>2018-06-22 16:43:13</RunStartTime>
+        <Timezone>India Standard Time</Timezone>
+        <OrchestrationToolName>JUnit</OrchestrationToolName>
+        <OrchestrationToolVersion/>
+        <ReportTitle>LeanFT Report</ReportTitle>
+    </GeneralInfo>
+    <ReportNode type="Run">
+        <Data>
+            <Name>Run Results</Name>
+            <Description><![CDATA[ ]]></Description>
+            <StartTime>2018-06-22 16:43:13</StartTime>
+            <Result>Passed</Result>
+            <Links/>
+            <Duration><![CDATA[00:00:00.882]]></Duration>
+            <Extension>
+                <Any>
+                    <IconKey>Run</IconKey>
+                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                </Any>
+            </Extension>
+            <Environment>
+                <OSInfo><![CDATA[Microsoft Windows NT 6.2.9200.0]]></OSInfo>
+                <HostName><![CDATA[LAPTOP-NS9OJAMJ]]></HostName>
+                <NumberOfCores>4</NumberOfCores>
+                <CpuInfo/>
+                <TotalMemory>8060</TotalMemory>
+                <Locale><![CDATA[en-IN]]></Locale>
+                <Timezone>India Standard Time</Timezone>
+                <User>Acer</User>
+            </Environment>
+            <TestedApplication/>
+            <ToolName>LeanFT</ToolName>
+            <ToolVersion><![CDATA[14.03]]></ToolVersion>
+        </Data>
+        <ReportNode type="Suite">
+            <Data>
+                <Name>LeanFTSuite</Name>
+                <Description/>
+                <StartTime>2018-06-22 16:43:14</StartTime>
+                <Result>Passed</Result>
+                <Links/>
+                <Duration><![CDATA[00:00:00.731]]></Duration>
+                <Extension>
+                    <Any>
+                        <IconKey>Suite</IconKey>
+                        <IsHtmlErrorText>true</IsHtmlErrorText>
+                    </Any>
+                </Extension>
+            </Data>
+            <ReportNode type="TestContainer">
+                <Data>
+                    <Name>LeanFtTest</Name>
+                    <Description/>
+                    <StartTime>2018-06-22 16:43:14</StartTime>
+                    <Result>Passed</Result>
+                    <Links/>
+                    <Duration><![CDATA[00:00:00.731]]></Duration>
+                    <Extension>
+                        <Any>
+                            <IconKey>TestContainer</IconKey>
+                            <IsHtmlErrorText>true</IsHtmlErrorText>
+                        </Any>
+                    </Extension>
+                </Data>
+                <ReportNode type="Package">
+                    <Data>
+                        <Name>leanFt</Name>
+                        <Description><![CDATA[Version: N/A]]></Description>
+                        <StartTime>2018-06-22 16:43:14</StartTime>
+                        <Result>Passed</Result>
+                        <Links/>
+                        <Duration><![CDATA[00:00:00.731]]></Duration>
+                        <Extension>
+                            <Any>
+                                <IconKey>Package</IconKey>
+                                <IsHtmlErrorText>true</IsHtmlErrorText>
+                            </Any>
+                        </Extension>
+                    </Data>
+                    <ReportNode type="Class">
+                        <Data>
+                            <Name><![CDATA[leanFt.LeanFtTest]]></Name>
+                            <Description/>
+                            <StartTime>2018-06-22 16:43:14</StartTime>
+                            <Result>Passed</Result>
+                            <Links/>
+                            <Duration><![CDATA[00:00:00.731]]></Duration>
+                            <Extension>
+                                <Any>
+                                    <IconKey>Class</IconKey>
+                                    <IsHtmlErrorText>true</IsHtmlErrorText>
+                                </Any>
+                            </Extension>
+                        </Data>
+                        <ReportNode type="Test">
+                            <Data>
+                                <Name>test</Name>
+                                <Description/>
+                                <StartTime>2018-06-22 16:43:14</StartTime>
+                                <Result>Passed</Result>
+                                <Links/>
+                                <Duration><![CDATA[00:00:00.725]]></Duration>
+                                <Extension>
+                                    <Any>
+                                        <IconKey>Test</IconKey>
+                                        <IsHtmlErrorText>true</IsHtmlErrorText>
+                                    </Any>
+                                </Extension>
+                            </Data>
+                            <ReportNode type="Step">
+                                <Data>
+                                    <Name><![CDATA[Desktop.launchAut]]></Name>
+                                    <Description><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>C:\eclipse\DriverUpdate-setup.exe</td></tr></table>]]></Description>
+                                    <StartTime>2018-06-22 16:43:14</StartTime>
+                                    <Result>Passed</Result>
+                                    <Links/>
+                                    <Duration><![CDATA[00:00:00.000]]></Duration>
+                                    <Extension>
+                                        <Any>
+                                            <TestObject>
+                                                <Path/>
+                                                <Operation/>
+                                                <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>C:\eclipse\DriverUpdate-setup.exe</td></tr></table>]]></OperationData>
+                                                <Properties/>
+                                            </TestObject>
+                                            <IsHtmlErrorText>true</IsHtmlErrorText>
+                                            <IconKey>Desktop</IconKey>
+                                            <CustomUIElements>
+                                                <DescriptionLabel>Data</DescriptionLabel>
+                                                <FlowTreeNodeCaption><![CDATA[Desktop.<span class='emphasis'>launchAut</span>]]></FlowTreeNodeCaption>
+                                                <FlowTreeNodeTooltip><![CDATA[Desktop.launchAut]]></FlowTreeNodeTooltip>
+                                            </CustomUIElements>
+                                            <HideContextInfo>true</HideContextInfo>
+                                        </Any>
+                                    </Extension>
+                                </Data>
+                            </ReportNode>
+                            <ReportNode type="Step">
+                                <Data>
+                                    <Name><![CDATA[I Agree.click]]></Name>
+                                    <Description/>
+                                    <StartTime>2018-06-22 16:43:14</StartTime>
+                                    <Result>Passed</Result>
+                                    <Links/>
+                                    <Duration><![CDATA[00:00:00.333]]></Duration>
+                                    <Extension>
+                                        <Any>
+                                            <TestObject>
+                                                <Path>
+                                                    <Object>
+                                                        <Type>Standard Windows.Dialog</Type>
+                                                        <Name><![CDATA[DriverUpdate Setup]]></Name>
+                                                    </Object>
+                                                    <Object>
+                                                        <Type>Standard Windows.Button</Type>
+                                                        <Name><![CDATA[I Agree]]></Name>
+                                                    </Object>
+                                                </Path>
+                                                <Operation>click</Operation>
+                                                <OperationData/>
+                                                <Properties>
+                                                    <Property>
+                                                        <Name><![CDATA[text]]></Name>
+                                                        <Value><![CDATA[I &Agree]]></Value>
+                                                    </Property>
+                                                    <Property>
+                                                        <Name><![CDATA[nativeClass]]></Name>
+                                                        <Value><![CDATA[Button]]></Value>
+                                                    </Property>
+                                                    <Property>
+                                                        <Name><![CDATA[indexType]]></Name>
+                                                        <Value><![CDATA["location"]]></Value>
+                                                    </Property>
+                                                </Properties>
+                                            </TestObject>
+                                            <IsHtmlErrorText>true</IsHtmlErrorText>
+                                            <IconKey>Button</IconKey>
+                                            <CustomUIElements>
+                                                <DescriptionLabel>Data</DescriptionLabel>
+                                            </CustomUIElements>
+                                            <Descriptive>
+                                                <TestObject>
+                                                    <Path>
+                                                        <Object>
+                                                            <Type>Standard Windows.Dialog</Type>
+                                                            <Name><![CDATA[DriverUpdate Setup]]></Name>
+                                                            <IconKey>Dialog</IconKey>
+                                                        </Object>
+                                                        <Object>
+                                                            <Type>Standard Windows.Button</Type>
+                                                            <Name><![CDATA[I Agree]]></Name>
+                                                            <IconKey>Button</IconKey>
+                                                        </Object>
+                                                    </Path>
+                                                </TestObject>
+                                            </Descriptive>
+                                            <HideContextInfo>true</HideContextInfo>
+                                        </Any>
+                                    </Extension>
+                                </Data>
+                            </ReportNode>
+                            <ReportNode type="Step">
+                                <Data>
+                                    <Name><![CDATA[Accept  Install.click]]></Name>
+                                    <Description/>
+                                    <StartTime>2018-06-22 16:43:14</StartTime>
+                                    <Result>Passed</Result>
+                                    <Links/>
+                                    <Duration><![CDATA[00:00:00.160]]></Duration>
+                                    <Extension>
+                                        <Any>
+                                            <TestObject>
+                                                <Path>
+                                                    <Object>
+                                                        <Type>Standard Windows.Dialog</Type>
+                                                        <Name><![CDATA[DriverUpdate Setup]]></Name>
+                                                    </Object>
+                                                    <Object>
+                                                        <Type>Standard Windows.Button</Type>
+                                                        <Name><![CDATA[Accept  Install]]></Name>
+                                                    </Object>
+                                                </Path>
+                                                <Operation>click</Operation>
+                                                <OperationData/>
+                                                <Properties>
+                                                    <Property>
+                                                        <Name><![CDATA[text]]></Name>
+                                                        <Value><![CDATA[Accept && Inst&all]]></Value>
+                                                    </Property>
+                                                    <Property>
+                                                        <Name><![CDATA[nativeClass]]></Name>
+                                                        <Value><![CDATA[Button]]></Value>
+                                                    </Property>
+                                                    <Property>
+                                                        <Name><![CDATA[indexType]]></Name>
+                                                        <Value><![CDATA["location"]]></Value>
+                                                    </Property>
+                                                </Properties>
+                                            </TestObject>
+                                            <IsHtmlErrorText>true</IsHtmlErrorText>
+                                            <IconKey>Button</IconKey>
+                                            <CustomUIElements>
+                                                <DescriptionLabel>Data</DescriptionLabel>
+                                            </CustomUIElements>
+                                            <Descriptive>
+                                                <TestObject>
+                                                    <Path>
+                                                        <Object>
+                                                            <Type>Standard Windows.Dialog</Type>
+                                                            <Name><![CDATA[DriverUpdate Setup]]></Name>
+                                                            <IconKey>Dialog</IconKey>
+                                                        </Object>
+                                                        <Object>
+                                                            <Type>Standard Windows.Button</Type>
+                                                            <Name><![CDATA[Accept  Install]]></Name>
+                                                            <IconKey>Button</IconKey>
+                                                        </Object>
+                                                    </Path>
+                                                </TestObject>
+                                            </Descriptive>
+                                            <HideContextInfo>true</HideContextInfo>
+                                        </Any>
+                                    </Extension>
+                                </Data>
+                            </ReportNode>
+                        </ReportNode>
+                    </ReportNode>
+                </ReportNode>
+            </ReportNode>
+        </ReportNode>
+    </ReportNode>
+</Results>
