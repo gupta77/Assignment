@@ -63,7 +63,7 @@ public class LeanFtTest extends UnitTestClassBase  {
 //        Thread.sleep(2*1000);
 //        homeScreenPageObjects.clickHomeButton();
         installationPageObjects.clickFinishButton();
-        homeScreenPageObjects.clickHomeButton();
+        homeScreenPageObjects.clickHomeButtonWithWait();
 //        installationPageObjects.buttonStatus("Home");
 //        WaitUntilTestObjectState.WaitUntilEvaluator<Button> evaluator = new WaitUntilTestObjectState.WaitUntilEvaluator<Button>() {
 //            @Override
