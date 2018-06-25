@@ -8,13 +8,15 @@ import java.util.Properties;
 
 public class FileReader {
 
-    public FileInputStream readFile(String FilePath, Properties prop)
+    public static FileInputStream readFile(String FilePath, Properties prop)
     {
+        System.out.println(FilePath);
         File file = new File(FilePath);
         FileInputStream fileInput = null;
         try
         {
             fileInput = new FileInputStream(file);
+            System.out.println(" fileinput is" + fileInput);
         }
         catch (FileNotFoundException e)
         {

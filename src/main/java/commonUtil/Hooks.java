@@ -16,4 +16,8 @@ public class Hooks  {
         public void goTo(String url) throws GeneralLeanFtException {
             browser.navigate(url);
         }
+
+        public void getCurrentURL() throws Exception {
+          browser.getOpenURL();
+        }
 }
