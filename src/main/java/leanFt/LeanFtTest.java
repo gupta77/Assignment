@@ -13,7 +13,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import pageObjects.SavePageObjects;
 import steps.Launch;
+import steps.SaveSteps;
 import unittesting.*;
 
 import java.io.IOException;
@@ -29,6 +31,7 @@ public class LeanFtTest extends UnitTestClassBase  {
     private HomeScreenPageObjects homeScreenPageObjects = new HomeScreenPageObjects();
     private Launch launch = new Launch();
     private FileReader fileReader = new FileReader();
+    private SaveSteps saveSteps = new SaveSteps();
 
     public LeanFtTest() throws GeneralLeanFtException {
     }
@@ -51,31 +54,20 @@ public class LeanFtTest extends UnitTestClassBase  {
 
     @Test
     public void test() throws Exception {
-        // FileReader.readFile("./resources/appPath.properties", prop );
-
-//        Hooks hooks = new Hooks(BrowserType.CHROME);
-//        hooks.goTo("");
-        Aut app =  launch.launchApp("C:\\eclipse\\DriverUpdate-setup.exe");
-        Thread.sleep(2 * 1000);
+        Hooks hooks = new Hooks();
+        hooks.launchBrowser();
+        hooks.goTo("https://slimware.com/");
+        launch.clickDownloadButton();
+        saveSteps.setExeFileName();
+        saveSteps.getSaveFieldValue();
+        saveSteps.clickSaveButton();
+        Thread.sleep(15*1000);
+        Aut cal =  launch.launchApp("C:\\eclipse\\DriverUpdate-setup.exe");
         installationPageObjects.clickAgreeButton();
-        Thread.sleep(2 * 1000);
         installationPageObjects.clickAcceptInstallButton();
-//        Thread.sleep(2*1000);
-//        homeScreenPageObjects.clickHomeButton();
         installationPageObjects.clickFinishButton();
         homeScreenPageObjects.clickHomeButtonWithWait();
-//        installationPageObjects.buttonStatus("Home");
-//        WaitUntilTestObjectState.WaitUntilEvaluator<Button> evaluator = new WaitUntilTestObjectState.WaitUntilEvaluator<Button>() {
-//            @Override
-//            public boolean evaluate(Button element) throws GeneralLeanFtException {
-//                return element.isEnabled();
-//
-//            }
-//        };
-
-
-
-//        app.close();
+        homeScreenPageObjects.clickStartScanButton();
     }
 
 }

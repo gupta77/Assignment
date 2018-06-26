@@ -7,17 +7,22 @@ import com.hp.lft.sdk.web.BrowserType;
 
 public class Hooks  {
 
-    Browser browser;
+    public static Browser browser;
 
-    public Hooks (BrowserType browserName) throws GeneralLeanFtException {
-         browser = BrowserFactory.launch(browserName);
-        }
+    public void launchBrowser() throws Exception {
+         browser = BrowserFactory.launch(BrowserType.CHROME);
+    }
 
-        public void goTo(String url) throws GeneralLeanFtException {
+
+
+    public void goTo(String url) throws GeneralLeanFtException {
             browser.navigate(url);
+            browser.sync();
         }
 
         public void getCurrentURL() throws Exception {
           browser.getOpenURL();
         }
+
+
 }
