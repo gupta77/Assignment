@@ -13,7 +13,9 @@ public class Hooks  {
          browser = BrowserFactory.launch(BrowserType.CHROME);
     }
 
-
+    public void closeTab() throws  Exception {
+        browser.closeAllTabs();
+    }
 
     public void goTo(String url) throws GeneralLeanFtException {
             browser.navigate(url);

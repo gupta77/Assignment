@@ -20,4 +20,9 @@ public class Launch {
         websitePageObjects.downloadButton().click();
     }
 
+    public void launchAndDownloadFile() throws Exception {
+
+
+    }
+
 }

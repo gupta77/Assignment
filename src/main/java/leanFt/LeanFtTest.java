@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import pageObjects.SavePageObjects;
 import steps.Launch;
 import steps.SaveSteps;
+import steps.WebSteps;
 import unittesting.*;
 
 import java.io.IOException;
@@ -27,6 +28,7 @@ import static junit.framework.Assert.assertTrue;
 public class LeanFtTest extends UnitTestClassBase  {
 
     private Properties prop = new Properties();
+    private WebSteps webSteps = new WebSteps();
     private InstallationPageObjects installationPageObjects = new InstallationPageObjects();
     private HomeScreenPageObjects homeScreenPageObjects = new HomeScreenPageObjects();
     private Launch launch = new Launch();
@@ -54,20 +56,16 @@ public class LeanFtTest extends UnitTestClassBase  {
 
     @Test
     public void test() throws Exception {
-        Hooks hooks = new Hooks();
-        hooks.launchBrowser();
-        hooks.goTo("https://slimware.com/");
-        launch.clickDownloadButton();
-        saveSteps.setExeFileName();
-        saveSteps.getSaveFieldValue();
-        saveSteps.clickSaveButton();
-        Thread.sleep(15*1000);
-        Aut cal =  launch.launchApp("C:\\eclipse\\DriverUpdate-setup.exe");
-        installationPageObjects.clickAgreeButton();
-        installationPageObjects.clickAcceptInstallButton();
-        installationPageObjects.clickFinishButton();
-        homeScreenPageObjects.clickHomeButtonWithWait();
-        homeScreenPageObjects.clickStartScanButton();
+        webSteps.launchAndDownload();
+        saveSteps.saveDowloadFile();
+        webSteps.closeBrowserAfterDownload();
+
+//        Aut cal =  launch.launchApp("C:\\eclipse\\DriverUpdate-setup.exe");
+//        installationPageObjects.clickAgreeButton();
+//        installationPageObjects.clickAcceptInstallButton();
+//        installationPageObjects.clickFinishButton();
+//        homeScreenPageObjects.clickHomeButtonWithWait();
+//        homeScreenPageObjects.clickStartScanButton();
     }
 
 }

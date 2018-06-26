@@ -29,7 +29,6 @@ public class HomeScreenPageObjects {
 
     public void clickStartScanButton() throws Exception {
         elementsUtil.clickButtonWithWait(homeWindowName, startScanButton);
-        System.out.println("chirag code working");
     }
 
 

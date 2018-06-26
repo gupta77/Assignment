@@ -18,4 +18,11 @@ public class SaveSteps {
     public void clickSaveButton() throws Exception {
         savePageObjects.saveButton().click();
     }
+
+    public void saveDowloadFile() throws Exception {
+        setExeFileName();
+        getSaveFieldValue();
+        clickSaveButton();
+        Thread.sleep(15*1000);
+    }
 }
