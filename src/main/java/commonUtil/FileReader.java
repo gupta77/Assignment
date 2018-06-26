@@ -1,9 +1,7 @@
 package commonUtil;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Path;
 import java.util.Properties;
 
 public class FileReader {
@@ -31,4 +29,17 @@ public class FileReader {
         return fileInput;
     }
 
+    public static Properties readPropsFromFile(String filePath)
+    {
+        Properties props = new Properties();
+
+        try(InputStream fsi = ClassLoader.getSystemResourceAsStream(filePath)) {
+            props.load(fsi);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return props;
+    }
 }

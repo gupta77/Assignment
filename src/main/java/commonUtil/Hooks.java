@@ -22,8 +22,8 @@ public class Hooks  {
             browser.sync();
         }
 
-        public void getCurrentURL() throws Exception {
-          browser.getOpenURL();
+        public String getCurrentURL() throws Exception {
+          return browser.getOpenURL();
         }
 
 

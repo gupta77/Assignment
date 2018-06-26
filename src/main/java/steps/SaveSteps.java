@@ -19,10 +19,11 @@ public class SaveSteps {
         savePageObjects.saveButton().click();
     }
 
-    public void saveDowloadFile() throws Exception {
+    public void saveDownloadFile() throws Exception {
         setExeFileName();
         getSaveFieldValue();
         clickSaveButton();
-        Thread.sleep(15*1000);
+        //Sleep time to download file
+        Thread.sleep(20*1000);
     }
 }

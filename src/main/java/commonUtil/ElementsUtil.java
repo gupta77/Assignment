@@ -29,5 +29,10 @@ public class ElementsUtil {
         }
     }
 
+    public Boolean waitForButton (String windowName, String buttonName) throws Exception {
+        return element(windowName, buttonName).exists(20*1000);
+
+    }
+
 
 }

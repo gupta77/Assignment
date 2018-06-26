@@ -1,9 +1,7 @@
 package leanFt;
 
-import com.hp.lft.sdk.stdwin.Button;
-import com.hp.lft.sdk.web.BrowserType;
+import com.hp.lft.verifications.Verify;
 import commonUtil.FileReader;
-import commonUtil.Hooks;
 import pageObjects.HomeScreenPageObjects;
 import pageObjects.InstallationPageObjects;
 import com.hp.lft.sdk.*;
@@ -13,13 +11,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pageObjects.SavePageObjects;
 import steps.Launch;
+import steps.ResultsSteps;
 import steps.SaveSteps;
 import steps.WebSteps;
 import unittesting.*;
 
-import java.io.IOException;
 import java.util.Properties;
 
 import static com.hp.lft.sdk.WaitUntilTestObjectState.waitUntil;
@@ -27,15 +24,16 @@ import static junit.framework.Assert.assertTrue;
 
 public class LeanFtTest extends UnitTestClassBase  {
 
-    private Properties prop = new Properties();
+    private Properties properties = new Properties();
     private WebSteps webSteps = new WebSteps();
     private InstallationPageObjects installationPageObjects = new InstallationPageObjects();
     private HomeScreenPageObjects homeScreenPageObjects = new HomeScreenPageObjects();
     private Launch launch = new Launch();
-    private FileReader fileReader = new FileReader();
+    private ResultsSteps resultsSteps = new ResultsSteps();
     private SaveSteps saveSteps = new SaveSteps();
 
     public LeanFtTest() throws GeneralLeanFtException {
+        properties = FileReader.readPropsFromFile("appPath.properties");
     }
 
     @BeforeClass
@@ -55,17 +53,23 @@ public class LeanFtTest extends UnitTestClassBase  {
     }
 
     @Test
-    public void test() throws Exception {
+    public void assignment() throws Exception {
+//        Web Code Start from here
         webSteps.launchAndDownload();
-        saveSteps.saveDowloadFile();
+        saveSteps.saveDownloadFile();
         webSteps.closeBrowserAfterDownload();
+//         Web Code ends Here
 
-//        Aut cal =  launch.launchApp("C:\\eclipse\\DriverUpdate-setup.exe");
-//        installationPageObjects.clickAgreeButton();
-//        installationPageObjects.clickAcceptInstallButton();
-//        installationPageObjects.clickFinishButton();
-//        homeScreenPageObjects.clickHomeButtonWithWait();
-//        homeScreenPageObjects.clickStartScanButton();
+        // APP code Starts from here
+        Aut cal =  launch.launchApp(properties.getProperty("testApp"));
+        installationPageObjects.clickAgreeButton();
+        installationPageObjects.clickAcceptInstallButton();
+        installationPageObjects.clickFinishButton();
+        Verify.areEqualIgnoringCase("true", webSteps.verifyRegistratioPageOpens());
+        homeScreenPageObjects.clickHomeButtonWithWait();
+        homeScreenPageObjects.clickStartScanButton();
+        Verify.areEqualIgnoringCase("Update Selected Drivers", resultsSteps.getUpdateDriverButton());
+        //App Code ends Here
     }
 
 }

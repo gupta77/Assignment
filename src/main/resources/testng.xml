@@ -10,7 +10,7 @@
     <classes>
       <class name="leanFt.LeanFtTest">
         <methods>
-          <include name="test"/>
+          <include name="assignment"/>
           <!-- <exclude name=".*MethodsToExclude.*"/> -->
         </methods>
       </class>
